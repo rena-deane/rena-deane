@@ -1,0 +1,18 @@
+$height: 75px;
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: $height;
+}
+
+.buttonContainer {
+	float: right;
+	padding: 0px 50px;
+}
+
+.progressContainer {
+	padding: 10px 60px;	
+}

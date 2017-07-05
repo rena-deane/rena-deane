@@ -1,0 +1,9 @@
+.tmp/
+node_modules/
+dist/
+archive/
+resources/
+dist.zip
+*.zip
+.DS_Store
+npm-debug.log

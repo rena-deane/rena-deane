@@ -1,0 +1,92 @@
+@import '../../styles/variables.css';
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-size: cover;
+  height: 100%;
+  z-index: 10;
+}
+
+.logo {
+  height: 50%;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+
+  box-shadow: -15px 15px 0px 0px rgba(0,0,0,0.26);
+}
+
+.moon {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+
+  width: 8em;
+  height: 8em;
+  border-radius: 50%;
+  background-color: #e8e8e8;
+}
+
+.dawn {
+  background: #F3904F;
+  background: linear-gradient(0deg, #3B4371, #F3904F);
+}
+
+.day {
+  background: #83a4d4;  /* fallback for old browsers */
+  background: linear-gradient(0deg, #b6fbff, #83a4d4);
+}
+
+.dusk {
+  background: #ffd89b;
+  background: linear-gradient(0deg, #19547b, #ffd89b);
+}
+
+.night {
+  background: #00204a;
+  background: linear-gradient(0deg, #53768a 0%, #00295e 45%, #00204a 100%);
+}
+
+.midnight {
+  background: #232526;
+  background: linear-gradient(0deg, #414345, #232526);
+}

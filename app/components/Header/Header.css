@@ -1,0 +1,120 @@
+@import '../../styles/variables.css';
+
+$text-color: white;
+$navbar-height: 100px;
+$inner-height: 98px;
+$light-background: #1FBDB6;
+
+:global {
+    .navbar-default {
+        font-family: 'kfontlight';
+        margin-bottom: 0px !important;
+        background: #1FBDB6;
+        background: linear-gradient(to right, #51AEAA, #1FBDB6);
+        color: $text-color !important;
+        border-radius: 0 !important;
+        border: 0 !important;
+        font-weight: bold;
+        .navbar-brand,
+        .navbar-nav>li>a,
+        .navbar-brand:visited,
+        .navbar-nav>li>a:visited {
+            color: $text-color !important;
+        }
+        .navbar-brand {
+            position: absolute;
+            top: 0px;
+            left: 50px;
+            bottom: 0px;
+            padding: 0;
+            margin: 0;
+            z-index: 20;
+        }
+        .navbar-brand:before {
+            content: ' ';
+            display: inline-block;
+            vertical-align: middle;
+            height: 100%;
+            z-index: 20;
+        }
+        .nav-back {
+            display: inline-block;
+            vertical-align: middle;
+            z-index: 30;
+            cursor: pointer !important;
+        }
+        .navbar-brand:hover,
+        a:hover {
+            opacity: 0.8;
+        }
+        .navbar-nav>li>a {
+            font-size: 18px;
+        outline: 0;
+        }
+        .dropdown-toggle,
+        .navbar-nav>.open>a,
+        .navbar-nav>.open>a:hover,
+        .navbar-nav>.open>a:focus {
+            background-color: inherit !important;
+        }
+        li.dropdown>.dropdown-menu,
+        .dropdown-menu>li>a {
+            background: $light-background !important;
+            color: white !important;
+        }
+        .navbar-brand:hover,
+        .navbar-brand:active,
+        .navbar-nav>li>a:hover,
+        .navbar-nav>li>a:active {
+            color: #0085B3;
+        }
+        .navbar-collapse {
+            display: block;
+            position: relative;
+            text-align: center;
+            vertical-align: middle;
+            height: 100%;
+            z-index: 10;
+        }
+        .nav-right {
+            position: absolute;
+            right: 0px;
+        }
+        .module-title {
+            font-size: 36px;
+            display: inline-block;
+            line-height: 78px;
+            font-weight: 600;
+        }
+        ;
+    }
+    @media (min-width: 768px) {
+        .navbar-default {
+            height: $navbar-height;
+            .container-fluid,
+            .navbar-header,
+            .navbar-brand,
+            .nav {
+                height: 100%;
+            }
+            .nav>li {
+                height: 100%;
+                line-height: $inner-height;
+                a {
+                    display: inline-block;
+                    vertical-align: middle;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+
+  .topicDropDown {
+    height: 100px !important;
+  }
+
+  .topicMenuItem {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
